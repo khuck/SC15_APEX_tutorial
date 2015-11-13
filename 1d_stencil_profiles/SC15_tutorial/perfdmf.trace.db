@@ -1,0 +1,1013 @@
+11-12 10:11:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TRIAL" not found; SQL statement:
+SELECT * FROM trial [42102-160]
+11-12 10:16:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:16:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:16:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:16:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:16:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:16:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:16:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:16:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:17:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:17:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:17:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:17:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:17:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:17:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:17:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:17:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:18:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:18:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:18:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:18:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:18:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:18:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:18:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:18:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:18:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:18:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:18:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:18:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:20:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:20:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:20:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:20:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:20:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:20:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:20:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:20:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:20:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:20:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:20:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:20:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:21:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:21:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:21:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:21:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:21:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:21:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:21:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:21:25 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:21:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Column "TIMER_VALUE.INCLUSIVE_PER_CALL" not found; SQL statement:
+select timer.name as series_name, trial.name as xaxis_value, sum(timer_value.inclusive_per_call) as yaxis_value from   timer_value inner join metric on metric.name in ( 'TIME' ) and timer_value.metric=metric.id  inner join thread on thread.thread_rank = -2 inner join trial on thread.trial=trial.id and thread.trial in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17) inner join timer_call_data on timer_call_data.thread = thread.id   and  timer_call_data.id = timer_value.timer_call_data  inner join timer_callpath on timer_callpath.id=timer_call_data.timer_callpath and timer_callpath.parent is null inner join timer on timer.name in ( 'hpx_main')  and timer_callpath.timer = timer.id    group by series_name, xaxis_value order by 1, 2  [42122-160]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:134)
+	at org.h2.expression.Aggregate.optimize(Aggregate.java:358)
+	at org.h2.expression.Alias.optimize(Alias.java:47)
+	at org.h2.command.dml.Select.prepare(Select.java:794)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1119)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at edu.uoregon.tau.perfdmf.database.DBConnector.prepareStatement(DBConnector.java:468)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.doQuery(TAUdbGeneralChartData.java:185)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.<init>(TAUdbGeneralChartData.java:64)
+	at edu.uoregon.tau.perfexplorer.server.GeneralChartData.getChartData(GeneralChartData.java:48)
+	at edu.uoregon.tau.perfexplorer.server.PerfExplorerServer.requestGeneralChartData(PerfExplorerServer.java:881)
+	at edu.uoregon.tau.perfexplorer.client.PerfExplorerConnection.requestGeneralChartData(PerfExplorerConnection.java:207)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.doGeneralChart(ChartPane.java:1153)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.updateChart(ChartPane.java:994)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.actionPerformed(ChartPane.java:1031)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+11-12 10:21:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:21:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:21:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:21:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:21:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Column "TIMER_VALUE.INCLUSIVE_PER_CALL" not found; SQL statement:
+select timer.name as series_name, trial.name as xaxis_value, avg(timer_value.inclusive_per_call) as yaxis_value from   timer_value inner join metric on metric.name in ( 'TIME' ) and timer_value.metric=metric.id  inner join thread on thread.thread_rank = -6 inner join trial on thread.trial=trial.id and thread.trial in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17) inner join timer_call_data on timer_call_data.thread = thread.id   and  timer_call_data.id = timer_value.timer_call_data  inner join timer_callpath on timer_callpath.id=timer_call_data.timer_callpath and timer_callpath.parent is null inner join timer on timer.name in ( 'hpx_main')  and timer_callpath.timer = timer.id    group by series_name, xaxis_value order by 1, 2  [42122-160]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:134)
+	at org.h2.expression.Aggregate.optimize(Aggregate.java:358)
+	at org.h2.expression.Alias.optimize(Alias.java:47)
+	at org.h2.command.dml.Select.prepare(Select.java:794)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1119)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at edu.uoregon.tau.perfdmf.database.DBConnector.prepareStatement(DBConnector.java:468)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.doQuery(TAUdbGeneralChartData.java:185)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.<init>(TAUdbGeneralChartData.java:64)
+	at edu.uoregon.tau.perfexplorer.server.GeneralChartData.getChartData(GeneralChartData.java:48)
+	at edu.uoregon.tau.perfexplorer.server.PerfExplorerServer.requestGeneralChartData(PerfExplorerServer.java:881)
+	at edu.uoregon.tau.perfexplorer.client.PerfExplorerConnection.requestGeneralChartData(PerfExplorerConnection.java:207)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.doGeneralChart(ChartPane.java:1153)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.updateChart(ChartPane.java:994)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.actionPerformed(ChartPane.java:1031)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+11-12 10:21:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:21:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:21:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:21:49 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:21:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:21:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:21:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:21:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:22:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:22:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:22:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:22:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:24:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:24:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:24:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:24:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:24:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:24:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:24:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:24:37 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:25:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:25:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:25:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:25:13 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:25:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:25:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:25:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:25:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:25:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:25:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:25:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:25:44 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:26:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Column "ATOMIC_EVENT.NAME" not found; SQL statement:
+select atomic_event.name as series_name, trial.name as xaxis_value, avg(timer_value.mean_value) as yaxis_value from   timer_value inner join metric on metric.name in ( 'TIME' ) and timer_value.metric=metric.id  inner join thread on thread.thread_rank = -6 inner join trial on thread.trial=trial.id and thread.trial in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17) inner join timer_call_data on timer_call_data.thread = thread.id   and  timer_call_data.id = timer_value.timer_call_data  inner join timer_callpath on timer_callpath.id=timer_call_data.timer_callpath and timer_callpath.parent is null inner join timer on timer.name in ( 'CPU Idle %')  and timer_callpath.timer = timer.id    group by series_name, xaxis_value order by 1, 2  [42122-160]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:134)
+	at org.h2.expression.Alias.optimize(Alias.java:47)
+	at org.h2.command.dml.Select.prepare(Select.java:794)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1119)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at edu.uoregon.tau.perfdmf.database.DBConnector.prepareStatement(DBConnector.java:468)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.doQuery(TAUdbGeneralChartData.java:185)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.<init>(TAUdbGeneralChartData.java:64)
+	at edu.uoregon.tau.perfexplorer.server.GeneralChartData.getChartData(GeneralChartData.java:48)
+	at edu.uoregon.tau.perfexplorer.server.PerfExplorerServer.requestGeneralChartData(PerfExplorerServer.java:881)
+	at edu.uoregon.tau.perfexplorer.client.PerfExplorerConnection.requestGeneralChartData(PerfExplorerConnection.java:207)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.doGeneralChart(ChartPane.java:1153)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.updateChart(ChartPane.java:994)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.actionPerformed(ChartPane.java:1031)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+11-12 10:26:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:26:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:26:11 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:26:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Column "ATOMIC_EVENT.NAME" not found; SQL statement:
+select atomic_event.name as series_name, trial.name as xaxis_value, avg(timer_value.mean_value) as yaxis_value from   timer_value inner join metric on metric.name in ( 'TIME' ) and timer_value.metric=metric.id  inner join thread on thread.thread_rank = -6 inner join trial on thread.trial=trial.id and thread.trial in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17) inner join timer_call_data on timer_call_data.thread = thread.id   and  timer_call_data.id = timer_value.timer_call_data  inner join timer_callpath on timer_callpath.id=timer_call_data.timer_callpath and timer_callpath.parent is null inner join timer on timer_callpath.timer = timer.id    group by series_name, xaxis_value order by 1, 2  [42122-160]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:134)
+	at org.h2.expression.Alias.optimize(Alias.java:47)
+	at org.h2.command.dml.Select.prepare(Select.java:794)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1119)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at edu.uoregon.tau.perfdmf.database.DBConnector.prepareStatement(DBConnector.java:468)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.doQuery(TAUdbGeneralChartData.java:185)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.<init>(TAUdbGeneralChartData.java:64)
+	at edu.uoregon.tau.perfexplorer.server.GeneralChartData.getChartData(GeneralChartData.java:48)
+	at edu.uoregon.tau.perfexplorer.server.PerfExplorerServer.requestGeneralChartData(PerfExplorerServer.java:881)
+	at edu.uoregon.tau.perfexplorer.client.PerfExplorerConnection.requestGeneralChartData(PerfExplorerConnection.java:207)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.doGeneralChart(ChartPane.java:1153)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.updateChart(ChartPane.java:994)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.actionPerformed(ChartPane.java:1031)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+11-12 10:26:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:26:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:26:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:27:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Column "TIMER_VALUE.MEAN_VALUE" not found; SQL statement:
+select timer.name as series_name, trial.name as xaxis_value, avg(timer_value.mean_value) as yaxis_value from   timer_value inner join metric on metric.name in ( 'TIME' ) and timer_value.metric=metric.id  inner join thread on thread.thread_rank = -6 inner join trial on thread.trial=trial.id and thread.trial in (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17) inner join timer_call_data on timer_call_data.thread = thread.id   and  timer_call_data.id = timer_value.timer_call_data  inner join timer_callpath on timer_callpath.id=timer_call_data.timer_callpath and timer_callpath.parent is null inner join timer on timer.name in ( 'hpx_main')  and timer_callpath.timer = timer.id    group by series_name, xaxis_value order by 1, 2  [42122-160]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:134)
+	at org.h2.expression.Aggregate.optimize(Aggregate.java:358)
+	at org.h2.expression.Alias.optimize(Alias.java:47)
+	at org.h2.command.dml.Select.prepare(Select.java:794)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1119)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:267)
+	at edu.uoregon.tau.perfdmf.database.DBConnector.prepareStatement(DBConnector.java:468)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.doQuery(TAUdbGeneralChartData.java:185)
+	at edu.uoregon.tau.perfexplorer.server.TAUdbGeneralChartData.<init>(TAUdbGeneralChartData.java:64)
+	at edu.uoregon.tau.perfexplorer.server.GeneralChartData.getChartData(GeneralChartData.java:48)
+	at edu.uoregon.tau.perfexplorer.server.PerfExplorerServer.requestGeneralChartData(PerfExplorerServer.java:881)
+	at edu.uoregon.tau.perfexplorer.client.PerfExplorerConnection.requestGeneralChartData(PerfExplorerConnection.java:207)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.doGeneralChart(ChartPane.java:1153)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.updateChart(ChartPane.java:994)
+	at edu.uoregon.tau.perfexplorer.client.ChartPane.actionPerformed(ChartPane.java:1031)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3320)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+11-12 10:27:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:27:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:27:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:27:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:43:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:44:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:44:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:44:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:44:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:45:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:45:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:45:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:45:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:45:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:45:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:45:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:45:18 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:45:32 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:45:32 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:45:32 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:45:32 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:45:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:45:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:45:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:45:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:46:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:46:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:46:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:46:06 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:46:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:46:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:46:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:46:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:46:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:46:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:46:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:46:54 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:47:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:47:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:47:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:47:12 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:47:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:47:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:47:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:47:30 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:48:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:48:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:48:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:48:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:56:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:56:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:56:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:56:50 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:57:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:57:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:57:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:57:03 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:57:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:57:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:57:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:57:15 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:57:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:57:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:57:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:57:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:57:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:57:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:57:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:57:45 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:57:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:57:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:57:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:57:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:58:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:58:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:58:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:58:09 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:58:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:58:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:58:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:58:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:58:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:58:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:58:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:58:42 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:58:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:58:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:58:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:58:48 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:58:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:58:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:58:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:58:58 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:59:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:59:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:59:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:59:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:59:21 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:59:27 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:59:27 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:59:27 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:59:27 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 10:59:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 10:59:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 10:59:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 10:59:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:01:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:01:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:01:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:01:07 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:01:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:01:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:01:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:01:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:01:39 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:02:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:02:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:02:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:02:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:02:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:02:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:02:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:02:36 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:04:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:04:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:04:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:04:22 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:04:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:04:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:04:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:04:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]
+11-12 11:21:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_EVENT" not found; SQL statement:
+drop table temp_event [42102-160]
+11-12 11:21:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_METRIC" not found; SQL statement:
+drop table temp_metric [42102-160]
+11-12 11:21:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_XML_METADATA" not found; SQL statement:
+drop table temp_xml_metadata [42102-160]
+11-12 11:21:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEMP_TRIAL" not found; SQL statement:
+drop table temp_trial [42102-160]

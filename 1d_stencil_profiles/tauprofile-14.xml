@@ -1,0 +1,1884 @@
+<profile_xml>
+
+<definitions thread="*">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+<event id="0"><name>.TAU application</name><group>TAU_USER</group></event>
+<event id="1"><name>APEX MAIN THREAD</name><group>TAU_USER</group></event>
+<event id="2"><name>ProcData::read_proc: main loop</name><group>TAU_USER</group></event>
+<event id="3"><name>ProcData::read_proc</name><group>TAU_USER</group></event>
+<event id="4"><name>broadcast_call_shutdown_functions_action</name><group>TAU_USER</group></event>
+<event id="5"><name>broadcast_call_startup_functions_action</name><group>TAU_USER</group></event>
+<event id="6"><name>call_shutdown_functions_action</name><group>TAU_USER</group></event>
+<event id="7"><name>call_startup_functions_action</name><group>TAU_USER</group></event>
+<event id="8"><name>hpx::lcos::local::dataflow::execute</name><group>TAU_USER</group></event>
+<event id="9"><name>hpx_main</name><group>TAU_USER</group></event>
+<event id="10"><name>load_components_action</name><group>TAU_USER</group></event>
+<event id="11"><name>pre_main</name><group>TAU_USER</group></event>
+<event id="12"><name>primary_namespace_bulk_service_action</name><group>TAU_USER</group></event>
+<event id="13"><name>primary_namespace_service_action</name><group>TAU_USER</group></event>
+<event id="14"><name>profiler_listener::process_profiles</name><group>TAU_USER</group></event>
+<event id="15"><name>run_helper</name><group>TAU_USER</group></event>
+<event id="16"><name>set state for active thread</name><group>TAU_USER</group></event>
+<event id="17"><name>symbol_namespace_service_action</name><group>TAU_USER</group></event>
+<userevent id="0"><name>CPU Guest %</name></userevent>
+<userevent id="1"><name>CPU Guest % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="2"><name>CPU I/O Wait %</name></userevent>
+<userevent id="3"><name>CPU I/O Wait % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="4"><name>CPU IRQ %</name></userevent>
+<userevent id="5"><name>CPU IRQ % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="6"><name>CPU Idle %</name></userevent>
+<userevent id="7"><name>CPU Idle % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="8"><name>CPU Nice %</name></userevent>
+<userevent id="9"><name>CPU Nice % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="10"><name>CPU Steal %</name></userevent>
+<userevent id="11"><name>CPU Steal % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="12"><name>CPU System %</name></userevent>
+<userevent id="13"><name>CPU System % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="14"><name>CPU User %</name></userevent>
+<userevent id="15"><name>CPU User % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="16"><name>CPU soft IRQ %</name></userevent>
+<userevent id="17"><name>CPU soft IRQ % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="18"><name>[GROUP=MAX_MARKER] CPU Nice %</name></userevent>
+<userevent id="19"><name>[GROUP=MAX_MARKER] CPU Nice % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="20"><name>[GROUP=MAX_MARKER] CPU soft IRQ %</name></userevent>
+<userevent id="21"><name>[GROUP=MAX_MARKER] CPU soft IRQ % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="22"><name>[GROUP=MIN_MARKER] CPU System %</name></userevent>
+<userevent id="23"><name>[GROUP=MIN_MARKER] CPU System % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+<userevent id="24"><name>[GROUP=MIN_MARKER] CPU User %</name></userevent>
+<userevent id="25"><name>[GROUP=MIN_MARKER] CPU User % : .TAU application =&gt; APEX MAIN THREAD</name></userevent>
+
+</definitions>
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.0.25719" node="0" context="0" thread="0">
+<metadata>
+<attribute>
+<name>CPU Cores</name>
+<value>8</value>
+</attribute>
+<attribute>
+<name>CPU MHz</name>
+<value>2601.000</value>
+</attribute>
+<attribute>
+<name>CPU Type</name>
+<value>Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz</value>
+</attribute>
+<attribute>
+<name>CPU Vendor</name>
+<value>GenuineIntel</value>
+</attribute>
+<attribute>
+<name>CWD</name>
+<value>/chos/global/project/projectdirs/xpress/tutorial-examples</value>
+</attribute>
+<attribute>
+<name>Cache Size</name>
+<value>20480 KB</value>
+</attribute>
+<attribute>
+<name>Command Line</name>
+<value>./build-host/apex_examples/1d_stencil_4 --hpx:threads 14 --nx 100000 --np 1000 --nt 45 --hpx:bind=balanced</value>
+</attribute>
+<attribute>
+<name>Executable</name>
+<value>/chos/global/project/projectdirs/xpress/tutorial-examples/build-host/apex_examples/1d_stencil_4</value>
+</attribute>
+<attribute>
+<name>Hostname</name>
+<value>bc0903</value>
+</attribute>
+<attribute>
+<name>Local Time</name>
+<value>2015-11-12T09:08:29-08:00</value>
+</attribute>
+<attribute>
+<name>Memory Size</name>
+<value>65529548 kB</value>
+</attribute>
+<attribute>
+<name>Node Name</name>
+<value>bc0903</value>
+</attribute>
+<attribute>
+<name>OS Machine</name>
+<value>x86_64</value>
+</attribute>
+<attribute>
+<name>OS Name</name>
+<value>Linux</value>
+</attribute>
+<attribute>
+<name>OS Release</name>
+<value>2.6.32-431.46.2.el6.nersc.x86_64</value>
+</attribute>
+<attribute>
+<name>OS Version</name>
+<value>#1 SMP Thu Jan 22 09:48:18 PST 2015</value>
+</attribute>
+<attribute>
+<name>Starting Timestamp</name>
+<value>1447348109243721</value>
+</attribute>
+<attribute>
+<name>TAU Architecture</name>
+<value>default</value>
+</attribute>
+<attribute>
+<name>TAU Config</name>
+<value> -pthread -c++=icpc -cc=icc -fortran=ifort -prefix=/project/projectdirs/xpress/tau2-hpx</value>
+</attribute>
+<attribute>
+<name>TAU Makefile</name>
+<value>/project/projectdirs/xpress/tau2-hpx/x86_64/lib/Makefile.tau-icpc-pthread</value>
+</attribute>
+<attribute>
+<name>TAU MetaData Merge Time</name>
+<value>0 seconds</value>
+</attribute>
+<attribute>
+<name>TAU Unification Time</name>
+<value>2.3E-05 seconds</value>
+</attribute>
+<attribute>
+<name>TAU Version</name>
+<value>2.24.1-git</value>
+</attribute>
+<attribute>
+<name>TAU_BFD_LOOKUP</name>
+<value>on</value>
+</attribute>
+<attribute>
+<name>TAU_CALLPATH</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_CALLPATH_DEPTH</name>
+<value>2</value>
+</attribute>
+<attribute>
+<name>TAU_CALLSITE_LIMIT</name>
+<value>1</value>
+</attribute>
+<attribute>
+<name>TAU_COMPENSATE</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_CUPTI_API</name>
+<value>runtime</value>
+</attribute>
+<attribute>
+<name>TAU_EBS_KEEP_UNRESOLVED_ADDR</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_IBM_BG_HWP_COUNTERS</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_MAX_THREADS</name>
+<value>128</value>
+</attribute>
+<attribute>
+<name>TAU_MEASURE_TAU</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_MEMDBG_PROTECT_ABOVE</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_MEMDBG_PROTECT_BELOW</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_MEMDBG_PROTECT_FREE</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_OPENMP_RUNTIME</name>
+<value>on</value>
+</attribute>
+<attribute>
+<name>TAU_OPENMP_RUNTIME_EVENTS</name>
+<value>on</value>
+</attribute>
+<attribute>
+<name>TAU_OPENMP_RUNTIME_STATES</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_PROFILE</name>
+<value>on</value>
+</attribute>
+<attribute>
+<name>TAU_PROFILE_FORMAT</name>
+<value>merged</value>
+</attribute>
+<attribute>
+<name>TAU_SAMPLING</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_SIGNALS_GDB</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_THROTTLE</name>
+<value>on</value>
+</attribute>
+<attribute>
+<name>TAU_THROTTLE_NUMCALLS</name>
+<value>100000</value>
+</attribute>
+<attribute>
+<name>TAU_THROTTLE_PERCALL</name>
+<value>10</value>
+</attribute>
+<attribute>
+<name>TAU_TRACE</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_CUDA_CDP</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_CUDA_INSTRUCTIONS</name>
+<value></value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_HEADROOM</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_HEAP</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_IO_PARAMS</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_MEMORY_FOOTPRINT</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_MEMORY_LEAKS</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_SIGNALS</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>TAU_TRACK_UNIFIED_MEMORY</name>
+<value>off</value>
+</attribute>
+<attribute>
+<name>Timestamp</name>
+<value>1447348109243796</value>
+</attribute>
+<attribute>
+<name>UTC Time</name>
+<value>2015-11-12T17:08:29Z</value>
+</attribute>
+<attribute>
+<name>pid</name>
+<value>25719</value>
+</attribute>
+<attribute>
+<name>tid</name>
+<value>25719</value>
+</attribute>
+<attribute>
+<name>username</name>
+<value>khuck</value>
+</attribute>
+</metadata>
+</thread>
+
+<definitions thread="0.0.0.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.0.25719">
+<timestamp>1447348116691029</timestamp>
+<interval_data metrics="0 ">
+0 1 1 554 7446500 
+1 1 0 7445946 7445946 
+</interval_data>
+<atomic_data>
+0 7 0 0 0 0
+1 7 0 0 0 0
+2 7 0 0 0 0
+3 7 0 0 0 0
+4 7 0 0 0 0
+5 7 0 0 0 0
+6 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+7 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+8 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+9 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+10 7 0 0 0 0
+11 7 0 0 0 0
+12 7 25.875 0 17.71615783410138 2653.64641425761
+13 7 25.875 0 17.71615783410138 2653.64641425761
+14 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+15 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+16 7 0.03125 0 0.004464285714285714 0.0009765625
+17 7 0.03125 0 0.004464285714285714 0.0009765625
+18 2 43.96875 17.59375 30.78125 2242.791015625
+19 2 43.96875 17.59375 30.78125 2242.791015625
+20 1 0.03125 0.03125 0.03125 0.0009765625
+21 1 0.03125 0.03125 0.03125 0.0009765625
+22 1 0 0 0 0
+23 1 0 0 0 0
+24 1 0 0 0 0
+25 1 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.0.25719" node="0" context="0" thread="0">
+<metadata>
+<attribute>
+<name>TAU Profile Merge Time</name>
+<value>0.000568 seconds</value>
+</attribute>
+<attribute>
+<name>TAU_PRECOMPUTE</name>
+<value>on</value>
+</attribute>
+</metadata>
+</thread>
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.1.25719" node="0" context="0" thread="1">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.1.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.1.25719">
+<timestamp>1447348116691122</timestamp>
+<interval_data metrics="0 ">
+0 1 1 -7445900 0 
+2 7 18 14647 14718 
+3 1 7 7431182 7445900 
+14 18 0 71 71 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.2.25719" node="0" context="0" thread="2">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.2.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.2.25719">
+<timestamp>1447348116691184</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.3.25719" node="0" context="0" thread="3">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.3.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.3.25719">
+<timestamp>1447348116691233</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.4.25719" node="0" context="0" thread="4">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.4.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.4.25719">
+<timestamp>1447348116691281</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.5.25719" node="0" context="0" thread="5">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.5.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.5.25719">
+<timestamp>1447348116691329</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.6.25719" node="0" context="0" thread="6">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.6.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.6.25719">
+<timestamp>1447348116691379</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.7.25719" node="0" context="0" thread="7">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.7.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.7.25719">
+<timestamp>1447348116691428</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.8.25719" node="0" context="0" thread="8">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.8.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.8.25719">
+<timestamp>1447348116691474</timestamp>
+<interval_data metrics="0 ">
+0 1 2893 -5749447 0 
+4 1 0 48 48 
+8 2876 0 5642321 5642321 
+9 1 0 99735 99735 
+12 1 0 11 11 
+14 13 0 7214 7214 
+17 1 0 118 118 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.9.25719" node="0" context="0" thread="9">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.9.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.9.25719">
+<timestamp>1447348116691533</timestamp>
+<interval_data metrics="0 ">
+0 1 3270 -5746280 0 
+8 3248 0 5643981 5643981 
+9 1 0 99617 99617 
+12 4 0 147 147 
+14 16 0 2465 2465 
+17 1 0 70 70 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.10.25719" node="0" context="0" thread="10">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.10.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.10.25719">
+<timestamp>1447348116691591</timestamp>
+<interval_data metrics="0 ">
+0 1 3381 -5746555 0 
+6 1 0 610 610 
+8 3347 0 5645353 5645353 
+9 1 0 97730 97730 
+12 3 0 214 214 
+14 28 0 2621 2621 
+17 1 0 27 27 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.11.25719" node="0" context="0" thread="11">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.11.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.11.25719">
+<timestamp>1447348116691649</timestamp>
+<interval_data metrics="0 ">
+0 1 3294 -5745518 0 
+8 3251 0 5645683 5645683 
+9 1 0 98567 98567 
+14 39 0 1158 1158 
+16 1 0 27 27 
+17 2 0 83 83 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.12.25719" node="0" context="0" thread="12">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.12.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.12.25719">
+<timestamp>1447348116691706</timestamp>
+<interval_data metrics="0 ">
+0 1 3359 -5640306 0 
+5 1 0 41 41 
+8 3319 0 5549729 5549729 
+9 1 0 89007 89007 
+10 1 0 891 891 
+11 1 0 366 366 
+12 2 0 26 26 
+13 1 0 25 25 
+14 33 0 221 221 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.13.25719" node="0" context="0" thread="13">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.13.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.13.25719">
+<timestamp>1447348116691766</timestamp>
+<interval_data metrics="0 ">
+0 1 3207 -5745496 0 
+6 1 0 92 92 
+7 1 0 830 830 
+8 3171 0 5643491 5643491 
+9 1 0 97424 97424 
+12 1 0 15 15 
+14 31 0 3583 3583 
+17 1 0 61 61 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.14.25719" node="0" context="0" thread="14">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.14.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.14.25719">
+<timestamp>1447348116691825</timestamp>
+<interval_data metrics="0 ">
+0 1 3293 -5669990 0 
+8 3259 0 5550927 5550927 
+9 1 0 98916 98916 
+10 2 0 19932 19932 
+11 1 0 18 18 
+12 3 0 38 38 
+14 27 0 159 159 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.15.25719" node="0" context="0" thread="15">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.15.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.15.25719">
+<timestamp>1447348116691882</timestamp>
+<interval_data metrics="0 ">
+0 1 3319 -5641470 0 
+5 1 0 42 42 
+8 3289 0 5542030 5542030 
+9 1 0 99133 99133 
+12 3 0 110 110 
+13 1 0 27 27 
+14 24 0 128 128 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.16.25719" node="0" context="0" thread="16">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.16.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.16.25719">
+<timestamp>1447348116691936</timestamp>
+<interval_data metrics="0 ">
+0 1 3243 -5653701 0 
+4 1 0 116 116 
+5 1 0 35 35 
+8 3212 0 5553461 5553461 
+9 1 0 99646 99646 
+12 2 0 86 86 
+14 25 0 313 313 
+17 1 0 44 44 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.17.25719" node="0" context="0" thread="17">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.17.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.17.25719">
+<timestamp>1447348116691996</timestamp>
+<interval_data metrics="0 ">
+0 1 3099 -5845229 0 
+7 2 0 166 166 
+8 3055 0 5642361 5642361 
+9 2 0 197890 197890 
+12 4 0 82 82 
+13 1 0 131 131 
+14 33 0 4566 4566 
+17 2 0 33 33 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.18.25719" node="0" context="0" thread="18">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.18.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.18.25719">
+<timestamp>1447348116692059</timestamp>
+<interval_data metrics="0 ">
+0 1 3412 -5744708 0 
+8 3373 0 5645713 5645713 
+9 1 0 98153 98153 
+12 2 0 56 56 
+14 35 0 700 700 
+17 1 0 86 86 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.19.25719" node="0" context="0" thread="19">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.19.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.19.25719">
+<timestamp>1447348116692116</timestamp>
+<interval_data metrics="0 ">
+0 1 3087 -5642987 0 
+4 2 0 63 63 
+5 1 0 34 34 
+8 3037 0 5253709 5253709 
+9 2 0 387594 387594 
+12 2 0 71 71 
+13 1 0 136 136 
+14 42 0 1380 1380 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.20.25719" node="0" context="0" thread="20">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.20.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.20.25719">
+<timestamp>1447348116692174</timestamp>
+<interval_data metrics="0 ">
+0 1 3274 -5657947 0 
+8 3237 0 5558571 5558571 
+9 1 0 99043 99043 
+14 36 0 333 333 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.21.25719" node="0" context="0" thread="21">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.21.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.21.25719">
+<timestamp>1447348116692228</timestamp>
+<interval_data metrics="0 ">
+0 1 3376 -5655054 0 
+8 3326 0 5555038 5555038 
+9 1 0 97772 97772 
+11 1 0 1407 1407 
+12 5 0 96 96 
+14 42 0 426 426 
+15 1 0 315 315 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+<profile_xml>
+
+<thread id="0.0.22.25719" node="0" context="0" thread="22">
+<metadata>
+</metadata>
+</thread>
+
+<definitions thread="0.0.22.25719">
+<metric id="0"><name>TIME</name>
+<units>unknown</units>
+</metric>
+</definitions>
+
+<profile thread="0.0.22.25719">
+<timestamp>1447348116692286</timestamp>
+<interval_data metrics="0 ">
+0 1 0 0 0 
+</interval_data>
+<atomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</atomic_data>
+</profile>
+
+</profile_xml>
+ <profile_xml>
+<derivedentity id="total">
+</derivedentity>
+<derivedprofile derivedentity="total">
+<derivedinterval_data metrics="0 ">
+0 23 45509 -87330034 7446500 
+1 1 0 7445946 7445946 
+2 7 18 14647 14718 
+3 1 7 7431182 7445900 
+4 4 0 227 227 
+5 4 0 152 152 
+6 2 0 702 702 
+7 3 0 996 996 
+8 45000 0 78072368 78072368 
+9 16 0 1760227 1760227 
+10 3 0 20823 20823 
+11 3 0 1791 1791 
+12 32 0 952 952 
+13 4 0 319 319 
+14 442 0 25338 25338 
+15 1 0 315 315 
+16 1 0 27 27 
+17 10 0 522 522 
+</derivedinterval_data>
+</derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="mean_all">
+</derivedentity>
+<derivedprofile derivedentity="mean_all">
+<derivedinterval_data metrics="0 ">
+0 1 1978.652173913043 -3796958 323760.8695652174 
+1 0.04347826086956522 0 323736.7826086957 323736.7826086957 
+2 0.3043478260869565 0.7826086956521739 636.8260869565217 639.9130434782609 
+3 0.04347826086956522 0.3043478260869565 323094.8695652174 323734.7826086957 
+4 0.1739130434782609 0 9.869565217391305 9.869565217391305 
+5 0.1739130434782609 0 6.608695652173913 6.608695652173913 
+6 0.08695652173913043 0 30.52173913043478 30.52173913043478 
+7 0.1304347826086956 0 43.30434782608695 43.30434782608695 
+8 1956.521739130435 0 3394450.782608696 3394450.782608696 
+9 0.6956521739130435 0 76531.60869565218 76531.60869565218 
+10 0.1304347826086956 0 905.3478260869565 905.3478260869565 
+11 0.1304347826086956 0 77.8695652173913 77.8695652173913 
+12 1.391304347826087 0 41.39130434782609 41.39130434782609 
+13 0.1739130434782609 0 13.8695652173913 13.8695652173913 
+14 19.21739130434782 0 1101.652173913043 1101.652173913043 
+15 0.04347826086956522 0 13.69565217391304 13.69565217391304 
+16 0.04347826086956522 0 1.173913043478261 1.173913043478261 
+17 0.4347826086956522 0 22.69565217391304 22.69565217391304 
+</derivedinterval_data>
+<derivedatomic_data>
+0 0.3043478260869565 0 0 0 0
+1 0.3043478260869565 0 0 0 0
+2 0.3043478260869565 0 0 0 0
+3 0.3043478260869565 0 0 0 0
+4 0.3043478260869565 0 0 0 0
+5 0.3043478260869565 0 0 0 0
+6 0.3043478260869565 3.286115007012623 2.448369565217391 2.801279803646564 1289.237152567666
+7 0.3043478260869565 3.286115007012623 2.448369565217391 2.801279803646564 1289.237152567666
+8 0.3043478260869565 1.911684782608696 0.3997194950911641 0.8110223402123822 145.6140309361286
+9 0.3043478260869565 1.911684782608696 0.3997194950911641 0.8110223402123822 145.6140309361286
+10 0.3043478260869565 0 0 0 0
+11 0.3043478260869565 0 0 0 0
+12 0.3043478260869565 1.125 0 0.7702677319174515 115.3759310546787
+13 0.3043478260869565 1.125 0 0.7702677319174515 115.3759310546787
+14 0.3043478260869565 0.002805049088359046 0 0.0005948206772189941 0.0002234301480568249
+15 0.3043478260869565 0.002805049088359046 0 0.0005948206772189941 0.0002234301480568249
+16 0.3043478260869565 0.001358695652173913 0 0.0001940993788819876 4.245923913043478E-05
+17 0.3043478260869565 0.001358695652173913 0 0.0001940993788819876 4.245923913043478E-05
+18 0.08695652173913043 1.911684782608696 0.7649456521739131 1.338315217391304 97.51265285326087
+19 0.08695652173913043 1.911684782608696 0.7649456521739131 1.338315217391304 97.51265285326087
+20 0.04347826086956522 0.001358695652173913 0.001358695652173913 0.001358695652173913 4.245923913043478E-05
+21 0.04347826086956522 0.001358695652173913 0.001358695652173913 0.001358695652173913 4.245923913043478E-05
+22 0.04347826086956522 0 0 0 0
+23 0.04347826086956522 0 0 0 0
+24 0.04347826086956522 0 0 0 0
+25 0.04347826086956522 0 0 0 0
+</derivedatomic_data>
+</derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="mean_no_null">
+</derivedentity>
+<derivedprofile derivedentity="mean_no_null">
+<derivedinterval_data metrics="0 ">
+0 1 1978.652173913043 -3796958 323760.8695652174 
+1 1 0 7445946 7445946 
+2 7 18 14647 14718 
+3 1 7 7431182 7445900 
+4 1.333333333333333 0 75.66666666666667 75.66666666666667 
+5 1 0 38 38 
+6 1 0 351 351 
+7 1.5 0 498 498 
+8 3214.285714285714 0 5576597.714285715 5576597.714285715 
+9 1.142857142857143 0 125730.5 125730.5 
+10 1.5 0 10411.5 10411.5 
+11 1 0 597 597 
+12 2.666666666666667 0 79.33333333333333 79.33333333333333 
+13 1 0 79.75 79.75 
+14 29.46666666666667 0 1689.2 1689.2 
+15 1 0 315 315 
+16 1 0 27 27 
+17 1.25 0 65.25 65.25 
+</derivedinterval_data>
+<derivedatomic_data>
+0 7 0 0 0 0
+1 7 0 0 0 0
+2 7 0 0 0 0
+3 7 0 0 0 0
+4 7 0 0 0 0
+5 7 0 0 0 0
+6 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+7 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+8 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+9 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+10 7 0 0 0 0
+11 7 0 0 0 0
+12 7 25.875 0 17.71615783410138 2653.64641425761
+13 7 25.875 0 17.71615783410138 2653.64641425761
+14 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+15 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+16 7 0.03125 0 0.004464285714285714 0.0009765625
+17 7 0.03125 0 0.004464285714285714 0.0009765625
+18 2 43.96875 17.59375 30.78125 2242.791015625
+19 2 43.96875 17.59375 30.78125 2242.791015625
+20 1 0.03125 0.03125 0.03125 0.0009765625
+21 1 0.03125 0.03125 0.03125 0.0009765625
+22 1 0 0 0 0
+23 1 0 0 0 0
+24 1 0 0 0 0
+25 1 0 0 0 0
+</derivedatomic_data>
+</derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="stddev_all">
+</derivedentity>
+<derivedprofile derivedentity="stddev_all">
+<derivedinterval_data metrics="0 ">
+0 0 1589.823906264482 2795411.284560856 1518573.085022833 
+1 0.203931119992323 0 1518460.107182357 1518460.107182357 
+2 1.427517839946261 3.670760159861814 2986.979114527555 3001.45822404701 
+3 0.203931119992323 1.427517839946261 1515449.268126791 1518450.726350838 
+4 0.4802330877037939 0 27.57488515144373 27.57488515144373 
+5 0.3790346907426673 0 14.47858727925569 14.47858727925569 
+6 0.2817713347133852 0 124.9587304273651 124.9587304273651 
+7 0.4476360930863913 0 171.09936975022 171.09936975022 
+8 1572.16726263503 0 2722734.182852692 2722734.182852692 
+9 0.6209937763950304 0 85914.87328530195 85914.87328530195 
+10 0.4476360930863913 0 4060.554937537004 4060.554937537004 
+11 0.3367811605397754 0 292.9953708415776 292.9953708415776 
+12 1.580839909799812 0 56.75250550334648 56.75250550334648 
+13 0.3790346907426673 0 37.64052435506189 37.64052435506189 
+14 15.71196310137772 0 1805.564938899244 1805.564938899244 
+15 0.203931119992323 0 64.23830279758175 64.23830279758175 
+16 0.203931119992323 0 5.506140239792721 5.506140239792721 
+17 0.6478114967717974 0 35.3472645551419 35.3472645551419 
+</derivedinterval_data>
+<derivedatomic_data>
+0 1.427517839946261 0 0 0 0
+1 1.427517839946261 0 0 0 0
+2 1.427517839946261 0 0 0 0
+3 1.427517839946261 0 0 0 0
+4 1.427517839946261 0 0 0 0
+5 1.427517839946261 0 0 0 0
+6 1.427517839946261 15.41324561748429 11.48387119456769 13.13916693869892 6047.058258553264
+7 1.427517839946261 15.41324561748429 11.48387119456769 13.13916693869892 6047.058258553264
+8 1.427517839946261 8.966596432162453 1.87485061928426 3.804031966101036 682.990345554234
+9 1.427517839946261 8.966596432162453 1.87485061928426 3.804031966101036 682.990345554234
+10 1.427517839946261 0 0 0 0
+11 1.427517839946261 0 0 0 0
+12 1.427517839946261 5.276717729801359 0 3.612875909069063 541.1610853231663
+13 1.427517839946261 5.276717729801359 0 3.612875909069063 541.1610853231663
+14 1.427517839946261 0.01315684645111761 0 0.002789956278696816 0.001047980287665413
+15 1.427517839946261 0.01315684645111761 0 0.002789956278696816 0.001047980287665413
+16 1.427517839946261 0.006372847499760094 0 0.0009104067856800135 0.000199151484367503
+17 1.427517839946261 0.006372847499760094 0 0.0009104067856800135 0.000199151484367503
+18 0.407862239984646 8.966596432162453 3.587913142364933 6.277254787263693 457.3748837251259
+19 0.407862239984646 8.966596432162453 3.587913142364933 6.277254787263693 457.3748837251259
+20 0.203931119992323 0.006372847499760094 0.006372847499760094 0.006372847499760094 0.000199151484367503
+21 0.203931119992323 0.006372847499760094 0.006372847499760094 0.006372847499760094 0.000199151484367503
+22 0.203931119992323 0 0 0 0
+23 0.203931119992323 0 0 0 0
+24 0.203931119992323 0 0 0 0
+25 0.203931119992323 0 0 0 0
+</derivedatomic_data>
+</derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="stddev_no_null">
+</derivedentity>
+<derivedprofile derivedentity="stddev_no_null">
+<derivedinterval_data metrics="0 ">
+0 0 1589.823906264482 2795411.284560856 1518573.085022833 
+1 0 0 0 0 
+2 0 0 0 0 
+3 0 0 0 0 
+4 0.4714045207910318 0 29.16999980954555 29.16999980954555 
+5 0 0 3.535533905932738 3.535533905932738 
+6 0 0 259 259 
+7 0.5 0 332 332 
+8 133.6169517535837 0 100033.7874901721 100033.7874901721 
+9 0.3499271061118828 0 77076.11661926893 77076.11661926893 
+10 0.5 0 9520.5 9520.5 
+11 0 0 590.1135483955609 590.1135483955609 
+12 1.178511301977579 0 56.24253036823843 56.24253036823843 
+13 0 0 53.78371035917846 53.78371035917846 
+14 8.747317048990254 0 2001.569424226899 2001.569424226899 
+15 0 0 0 0 
+16 0 0 0 0 
+17 0.4330127018922193 0 28.55586629748781 28.55586629748781 
+</derivedinterval_data>
+<derivedatomic_data>
+0 0 0 0 0 0
+1 0 0 0 0 0
+2 0 0 0 0 0
+3 0 0 0 0 0
+4 0 0 0 0 0
+5 0 0 0 0 0
+6 0 0 0 0 0
+7 0 0 0 0 0
+8 0 0 0 0 0
+9 0 0 0 0 0
+10 0 0 0 0 0
+11 0 0 0 0 0
+12 0 0 0 0 0
+13 0 0 0 0 0
+14 0 0 0 0 0
+15 0 0 0 0 0
+16 0 0 0 0 0
+17 0 0 0 0 0
+18 0 0 0 0 0
+19 0 0 0 0 0
+20 0 0 0 0 0
+21 0 0 0 0 0
+22 0 0 0 0 0
+23 0 0 0 0 0
+24 0 0 0 0 0
+25 0 0 0 0 0
+</derivedatomic_data>
+</derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="min_no_null">
+</derivedentity>
+<min_no_null_derivedprofile derivedentity="min_no_null">
+<derivedinterval_data metrics="0 ">
+0 1 1 554 7446500 
+1 1 -1 7445946 7445946 
+2 7 18 14647 14718 
+3 1 7 7431182 7445900 
+4 1 -1 48 48 
+5 1 -1 34 34 
+6 1 -1 92 92 
+7 1 -1 166 166 
+8 2876 -1 5253709 5253709 
+9 1 -1 89007 89007 
+10 1 -1 891 891 
+11 1 -1 18 18 
+12 1 -1 11 11 
+13 1 -1 25 25 
+14 13 -1 71 71 
+15 1 -1 315 315 
+16 1 -1 27 27 
+17 1 -1 27 27 
+</derivedinterval_data>
+<derivedatomic_data>
+0 7 -1 -1 -1 -1
+1 7 -1 -1 -1 -1
+2 7 -1 -1 -1 -1
+3 7 -1 -1 -1 -1
+4 7 -1 -1 -1 -1
+5 7 -1 -1 -1 -1
+6 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+7 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+8 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+9 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+10 7 -1 -1 -1 -1
+11 7 -1 -1 -1 -1
+12 7 25.875 -1 17.71615783410138 2653.64641425761
+13 7 25.875 -1 17.71615783410138 2653.64641425761
+14 7 0.06451612903225806 -1 0.01368087557603687 0.005138893405306971
+15 7 0.06451612903225806 -1 0.01368087557603687 0.005138893405306971
+16 7 0.03125 -1 0.004464285714285714 0.0009765625
+17 7 0.03125 -1 0.004464285714285714 0.0009765625
+18 2 43.96875 17.59375 30.78125 2242.791015625
+19 2 43.96875 17.59375 30.78125 2242.791015625
+20 1 0.03125 0.03125 0.03125 0.0009765625
+21 1 0.03125 0.03125 0.03125 0.0009765625
+22 1 -1 -1 -1 -1
+23 1 -1 -1 -1 -1
+24 1 -1 -1 -1 -1
+25 1 -1 -1 -1 -1
+</derivedatomic_data>
+</min_no_null_derivedprofile>
+
+</profile_xml>
+<profile_xml>
+<derivedentity id="max_no_null">
+</derivedentity>
+<max_no_null_derivedprofile derivedentity="max_no_null">
+<derivedinterval_data metrics="0 ">
+0 1 3412 554 7446500 
+1 1 0 7445946 7445946 
+2 7 18 14647 14718 
+3 1 7 7431182 7445900 
+4 2 0 116 116 
+5 1 0 42 42 
+6 1 0 610 610 
+7 2 0 830 830 
+8 3373 0 5645713 5645713 
+9 2 0 387594 387594 
+10 2 0 19932 19932 
+11 1 0 1407 1407 
+12 5 0 214 214 
+13 1 0 136 136 
+14 42 0 7214 7214 
+15 1 0 315 315 
+16 1 0 27 27 
+17 2 0 118 118 
+</derivedinterval_data>
+<derivedatomic_data>
+0 7 0 0 0 0
+1 7 0 0 0 0
+2 7 0 0 0 0
+3 7 0 0 0 0
+4 7 0 0 0 0
+5 7 0 0 0 0
+6 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+7 7 75.58064516129032 56.3125 64.42943548387096 29652.45450905632
+8 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+9 7 43.96875 9.193548387096774 18.65351382488479 3349.122711530958
+10 7 0 0 0 0
+11 7 0 0 0 0
+12 7 25.875 0 17.71615783410138 2653.64641425761
+13 7 25.875 0 17.71615783410138 2653.64641425761
+14 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+15 7 0.06451612903225806 0 0.01368087557603687 0.005138893405306971
+16 7 0.03125 0 0.004464285714285714 0.0009765625
+17 7 0.03125 0 0.004464285714285714 0.0009765625
+18 2 43.96875 17.59375 30.78125 2242.791015625
+19 2 43.96875 17.59375 30.78125 2242.791015625
+20 1 0.03125 0.03125 0.03125 0.0009765625
+21 1 0.03125 0.03125 0.03125 0.0009765625
+22 1 0 0 0 0
+23 1 0 0 0 0
+24 1 0 0 0 0
+25 1 0 0 0 0
+</derivedatomic_data>
+</max_no_null_derivedprofile>
+
+</profile_xml>
