@@ -253,4 +253,7 @@ symbol_namespace_service_ac... :        7    --n/a--   4.58e-04    --n/a--   3.2
 Shutdown event
 ```
 
-Host, CrayCNL is similar.
+Host, CrayCNL is similar.  It should be noted that APEX/HPX shutdown is somewhat delayed on Babbage - the more threads are requested, the longer it takes to terminate HPX. This is a known issue and is being investigated.
+
+# Exercise 2: Generating TAU profiles through APEX
+
