@@ -82,6 +82,7 @@ int hpx_main(boost::program_options::variables_map& vm)
 //[fib_main
 int main(int argc, char* argv[])
 {
+    // force APEX output
     apex::apex_options::use_screen_output(true);
 
     // Configure application-specific options

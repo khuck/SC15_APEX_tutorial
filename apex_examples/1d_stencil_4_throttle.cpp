@@ -303,7 +303,7 @@ int main(int argc, char* argv[])
 
     hpx::register_startup_function(&setup_counters);
     hpx::register_startup_function(&register_policies);
-    hpx::register_startup_function(&apex::print_options);
+    //hpx::register_startup_function(&apex::print_options);
 
     // Initialize and run HPX
     return hpx::init(desc_commandline, argc, argv);

@@ -73,6 +73,7 @@ void setup_counters() {
     catch(hpx::exception const& e) {
         std::cerr << "apex_policy_engine_active_thread_count: caught exception: "
             << e.what() << std::endl;
+        std::cerr << "Using iteration time and/or APEX idle rate instead." << std::endl;
         counter_id = hpx::naming::invalid_id;
         return;
     }

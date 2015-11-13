@@ -12,11 +12,12 @@ EOF
 cat << EOF > tau.conf
 TAU_TRACE=1
 TAU_PROFILE=1
-TAU_PROFILE_FORMAT=merged
 EOF
+#TAU_PROFILE_FORMAT=merged
 
 get_micfile 
 cmd="srun mpirun.mic -n 1 -hostfile micfile.$SLURM_JOB_ID -ppn 1 ./build-mic/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt --hpx:bind=balanced --hpx:print-bind"
 echo ${cmd}
 ${cmd}
 
+rm -f apex.conf tau.conf
