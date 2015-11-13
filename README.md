@@ -259,7 +259,7 @@ Host, CrayCNL is similar.  It should be noted that APEX/HPX shutdown is somewhat
 
 ## About this exercise
 
-This exercise shows how to enable TAU profiling with APEX, and demonstrates what is generated. The example program is a simple 1D stencil program with 1000 partitions of 100000 cells each. The program is executed on the MIC with 60 threads. This is neither the ideal program decomposition, nor the ideal number of threads, as we will see from later examples.  This exercise also uses an HPX feature to bind threads to cores using a "balanced" layout (for more information, see http://stellar-group.github.io/hpx/docs/html/hpx/manual/init/commandline/details.html).
+This exercise shows how to enable TAU profiling with APEX, and demonstrates what is generated. The example program is a simple 1D stencil heat diffusion program with 1000 partitions of 100000 cells each. The program is executed on the MIC with 60 threads.  This is neither the ideal program decomposition, nor the ideal number of threads, as we will see from later examples.  This exercise also uses an HPX feature to bind threads to cores using a "balanced" layout (for more information, see http://stellar-group.github.io/hpx/docs/html/hpx/manual/init/commandline/details.html).
 
 ## Running the exercise on the Babbage MIC node
 
@@ -404,3 +404,91 @@ tau_multimerge
 tau2slog2 tau.trc tau.edf -o tau.slog2
 jumpshot ./tau.slog2
 ```
+
+# Exercise 3: APEX policy to throttle thread concurrency
+
+## About this exercise
+
+This program is the same 1D stencil heat diffusion program described in exercise 2, but modified to include an APEX policy that will attempt to adjust the thread concurrency to improve performance.  The program is memory-bound beyond a number of threads (system-dependent, usually around 8-12) because the memory request traffic far exceeds the amount of computation required to update a single cell. Scaling studies of this test program have shown that the *ideal* number of threads is that which maximizes concurrency without oversaturating the memory controller. The APEX policy uses ActiveHarmony to minimize the HPX thread queue length (number of tasks waiting to execute). This is the function that requests the counter from HPX and adds it to the APEX profile:
+
+```
+bool test_function(apex_context const& context) {
+    if (!counters_initialized) return false;
+    try {
+        counter_value value1 = performance_counter::get_value(counter_id);
+        apex::sample_value("thread_queue_length", value1.get_value<int>());
+        return APEX_NOERROR;
+    }
+    catch(hpx::exception const& e) {
+        std::cerr
+            << "apex_policy_engine_active_thread_count: caught exception: "
+            << e.what() << std::endl;
+        return APEX_ERROR;
+    }
+}
+```
+
+and this is the APEX API call to set up concurrency throttling, using the output from that function call:
+
+```
+void register_policies() {
+    apex::register_periodic_policy(100000, test_function);
+
+    apex::setup_timer_throttling(std::string("thread_queue_length"),
+        APEX_MINIMIZE_ACCUMULATED, APEX_ACTIVE_HARMONY, 200000);
+}
+```
+
+The policy registration is configured to run as an HPX "startup" function:
+
+```
+    hpx::register_startup_function(&register_policies);
+```
+
+## Running the exercise on the Babbage host node:
+
+The program is executed by starting (or continuing) an interactive session and running the example:
+
+### Babbage host nodes:
+```
+salloc --reservation=SC_Reservation -N 1 -p debug
+# after the allocation is granted:
+./scripts/run_1d_stencil_throttle-host.sh
+```
+
+The output should look something like this:
+
+```
+./build-host/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 32 --nx 250000 --np 400 --nt 100 --hpx:bind=balanced
+Counters initialized! {00000001de000001, 0000000000001001}
+APEX concurrency throttling enabled, min threads: 8 max threads: 32
+Cap: 32 New: 0 Prev: 0
+Cap: 24 New: 123 Prev: 123
+Cap: 16 New: 0 Prev: 123
+Cap: 20 New: 336 Prev: 459
+Cap: 16 New: 0 Prev: 459
+Cap: 12 New: 0 Prev: 459
+Cap: 16 New: 0 Prev: 459
+Cap: 18 New: 304 Prev: 763
+Cap: 16 New: 0 Prev: 763
+Cap: 14 New: 0 Prev: 763
+Cap: 16 New: 0 Prev: 763
+Cap: 17 New: 206 Prev: 969
+Cap: 16 New: 0 Prev: 969
+Cap: 15 New: 0 Prev: 969
+Cap: 16 New: 0 Prev: 969
+Cap: 16 New: 106 Prev: 1075
+Cap: 16 New: 94 Prev: 1169
+Thread Cap value optimization has converged.
+Thread Cap value : 16
+Cap: 16 New: 0 Prev: 1169
+Cap: 16 New: 0 Prev: 1169
+Cap: 16 New: 0 Prev: 1169
+...
+Cap: 16 New: 39 Prev: 5224
+Cap: 16 New: 42 Prev: 5266
+OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
+32,                   27.285449883, 250000,               400,                  100                  
+```
+
+While 16 is not the *optimal* solution, it is an improvement over the performance without the adaptation.
