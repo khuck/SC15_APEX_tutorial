@@ -405,7 +405,7 @@ tau2slog2 tau.trc tau.edf -o tau.slog2
 jumpshot ./tau.slog2
 ```
 
-# Exercise 3: APEX policy to throttle thread concurrency
+# Exercise 3: APEX periodic policy to throttle thread concurrency
 
 ## About this exercise
 
@@ -497,4 +497,117 @@ OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
 
 While 20 is not the *optimal* solution, it is an improvement over the performance without the adaptation, while using fewer resources.
 
+# Exercise 4: APEX event-based policy to change decomposition
+
+## About this exercise
+
+This program is the same 1D stencil heat diffusion program described in exercise 2, but modified to include an APEX policy that will attempt to adjust problem decomposition to improve performance.  As described in exercise 2, The program is memory-bound, but the program decomposition also has an effect on performance. After some number of iterations, the problem is re-partitioned to try different values to improve performance.  The APEX policy uses ActiveHarmony to minimize the time spent in each block of iterations (50 in this example). The block of iterations is timed with an HPX timer (in nanoseconds), and returned by a method that converts it to seconds:
+
+```
+double get_global_elapsed() {
+    double seconds = global_elapsed / 1e9;
+    return seconds;
+}
+```
+
+and this is the APEX API call to set up the tuning, using the output from that function call:
+
+```
+    // Set up APEX tuning
+    // The tunable parameter -- how many partitions to divide data into
+    long np_index = 1;
+    long * tune_params[1] = { 0L };
+    long num_params = 1;
+    long mins[1]  = { 0 };
+    long maxs[1]  = { (long)divisors.size() };
+    long steps[1] = { 1 };
+    tune_params[0] = &np_index;
+    apex::setup_custom_tuning(get_global_elapsed, end_iteration_event, num_params,
+            tune_params, mins, maxs, steps);
+```
+
+The policy registration is configured to run as an HPX "startup" function:
+
+```
+    hpx::register_startup_function(&register_policies);
+```
+
+The repartitioning is triggered by an APEX *custom event*:
+
+```
+        apex::custom_event(end_iteration_event, 0);
+```
+
+## Running the exercise on the Babbage host node:
+
+The program is executed by starting (or continuing) an interactive session and running the example:
+
+### Babbage host nodes:
+```
+salloc --reservation=SC_Reservation -N 1 -p debug
+# after the allocation is granted:
+./scripts/run_1d_stencil_repart-host.sh
+```
+
+The output should look something like this:
+
+```
+./build-host/apex_examples/1d_stencil_4_repart --hpx:print-counter /threadqueue/length --hpx:print-counter-interval 100 --hpx:print-counter-destination /dev/null --hpx:threads 12 --nx 10000000 --nr 50 --nt 50 --hpx:bind=balanced
+apex_policy_engine_active_thread_count: caught exception: unknown counter type /threads/idle-rate: HPX(bad_parameter)
+Using iteration time and/or APEX idle rate instead.
+OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
+12,                   2.271579475, 5000000,              2,                    50                   
+12,                   8.88190639, 320,                  31250,                50                   
+12,                   1.850312922, 25000,                400,                  50                   
+12,                   1.914576961, 3125,                 3200,                 50                   
+12,                   1.292234367, 25000,                400,                  50                   
+12,                   1.016024995, 250000,               40,                   50                   
+12,                   1.312500042, 25000,                400,                  50                   
+12,                   1.026867275, 250000,               40,                   50                   
+12,                   1.280510026, 80000,                125,                  50                   
+12,                   1.005137222, 250000,               40,                   50                   
+12,                   1.306790145, 1250000,              8,                    50                   
+12,                   1.044563498, 250000,               40,                   50                   
+12,                   1.014567008, 250000,               40,                   50                   
+12,                   1.155023633, 500000,               20,                   50                   
+12,                   1.278969172, 1250000,              8,                    50                   
+12,                   1.151422426, 500000,               20,                   50                   
+12,                   1.013433416, 250000,               40,                   50                   
+12,                   1.321016533, 125000,               80,                   50                   
+12,                   1.166019871, 500000,               20,                   50                   
+12,                   1.328789565, 125000,               80,                   50                   
+12,                   1.067668983, 250000,               40,                   50                   
+12,                   1.09541764, 400000,               25,                   50                   
+12,                   1.043721435, 250000,               40,                   50                   
+12,                   1.200178215, 200000,               50,                   50                   
+12,                   1.063306877, 250000,               40,                   50                   
+12,                   1.21445271, 312500,               32,                   50                   
+12,                   1.014121612, 250000,               40,                   50                   
+12,                   1.085850936, 250000,               40,                   50                   
+12,                   1.02991568, 250000,               40,                   50                   
+12,                   1.225457176, 312500,               32,                   50                   
+12,                   1.032273038, 250000,               40,                   50                   
+12,                   1.016382031, 250000,               40,                   50                   
+12,                   1.028866099, 250000,               40,                   50                   
+12,                   1.080911062, 250000,               40,                   50                   
+12,                   1.016519709, 250000,               40,                   50                   
+Tuning has converged.
+12,                   1.022939519, 250000,               40,                   50                   
+12,                   1.004997524, 250000,               40,                   50                   
+12,                   1.004145836, 250000,               40,                   50                   
+12,                   1.02543216, 250000,               40,                   50                   
+12,                   1.026969246, 250000,               40,                   50                   
+12,                   1.050520931, 250000,               40,                   50                   
+12,                   1.029551753, 250000,               40,                   50                   
+12,                   1.018438387, 250000,               40,                   50                   
+12,                   1.043886854, 250000,               40,                   50                   
+12,                   1.034152984, 250000,               40,                   50                   
+12,                   1.023198584, 250000,               40,                   50                   
+12,                   1.041405105, 250000,               40,                   50                   
+12,                   1.027388522, 250000,               40,                   50                   
+12,                   1.023507802, 250000,               40,                   50                   
+12,                   1.015685204, 250000,               40,                   50                   
+```
+
+After tuning, it is determined that for 12 threads, 40 partitions of 250000 cells each provides the best performance.
 
