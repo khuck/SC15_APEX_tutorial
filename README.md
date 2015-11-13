@@ -257,3 +257,140 @@ Host, CrayCNL is similar.  It should be noted that APEX/HPX shutdown is somewhat
 
 # Exercise 2: Generating TAU profiles through APEX
 
+## About this exercise
+
+This exercise shows how to enable TAU profiling with APEX, and demonstrates what is generated. The example program is a simple 1D stencil program with 1000 partitions of 100000 cells each. The program is executed on the MIC with 60 threads. This is neither the ideal program decomposition, nor the ideal number of threads, as we will see from later examples.  This exercise also uses an HPX feature to bind threads to cores using a "balanced" layout (for more information, see http://stellar-group.github.io/hpx/docs/html/hpx/manual/init/commandline/details.html).
+
+## Running the exercise on the Babbage MIC node
+
+The program is executed by starting (or continuing) an interactive session and running the example:
+
+### Babbage MIC nodes:
+```
+salloc --reservation=SC_Reservation -N 1 -p debug
+# after the allocation is granted:
+./scripts/run_1d_stencil-mic.sh
+```
+
+The output should look something like this:
+
+```
+srun mpirun.mic -n 1 -hostfile micfile.8938 -ppn 1 ./build-mic/apex_examples/1d_stencil_4 --hpx:threads 60 --nx 100000 --np 1000 --nt 45 --hpx:bind=balanced --hpx:print-bind
+*******************************************************************************
+locality: 0
+   0: PU L#4(P#1), Core L#1(P#0), Socket L#0(P#0)
+   1: PU L#8(P#5), Core L#2(P#1), Socket L#0(P#0)
+   2: PU L#12(P#9), Core L#3(P#2), Socket L#0(P#0)
+   3: PU L#16(P#13), Core L#4(P#3), Socket L#0(P#0)
+   4: PU L#20(P#17), Core L#5(P#4), Socket L#0(P#0)
+   5: PU L#24(P#21), Core L#6(P#5), Socket L#0(P#0)
+   6: PU L#28(P#25), Core L#7(P#6), Socket L#0(P#0)
+   7: PU L#32(P#29), Core L#8(P#7), Socket L#0(P#0)
+   8: PU L#36(P#33), Core L#9(P#8), Socket L#0(P#0)
+   9: PU L#40(P#37), Core L#10(P#9), Socket L#0(P#0)
+  10: PU L#44(P#41), Core L#11(P#10), Socket L#0(P#0)
+  11: PU L#48(P#45), Core L#12(P#11), Socket L#0(P#0)
+  12: PU L#52(P#49), Core L#13(P#12), Socket L#0(P#0)
+  13: PU L#56(P#53), Core L#14(P#13), Socket L#0(P#0)
+  14: PU L#60(P#57), Core L#15(P#14), Socket L#0(P#0)
+  15: PU L#64(P#61), Core L#16(P#15), Socket L#0(P#0)
+  16: PU L#68(P#65), Core L#17(P#16), Socket L#0(P#0)
+  17: PU L#72(P#69), Core L#18(P#17), Socket L#0(P#0)
+  18: PU L#76(P#73), Core L#19(P#18), Socket L#0(P#0)
+  19: PU L#80(P#77), Core L#20(P#19), Socket L#0(P#0)
+  20: PU L#84(P#81), Core L#21(P#20), Socket L#0(P#0)
+  21: PU L#88(P#85), Core L#22(P#21), Socket L#0(P#0)
+  22: PU L#92(P#89), Core L#23(P#22), Socket L#0(P#0)
+  23: PU L#96(P#93), Core L#24(P#23), Socket L#0(P#0)
+  24: PU L#100(P#97), Core L#25(P#24), Socket L#0(P#0)
+  25: PU L#104(P#101), Core L#26(P#25), Socket L#0(P#0)
+  26: PU L#108(P#105), Core L#27(P#26), Socket L#0(P#0)
+  27: PU L#112(P#109), Core L#28(P#27), Socket L#0(P#0)
+  28: PU L#116(P#113), Core L#29(P#28), Socket L#0(P#0)
+  29: PU L#120(P#117), Core L#30(P#29), Socket L#0(P#0)
+  30: PU L#124(P#121), Core L#31(P#30), Socket L#0(P#0)
+  31: PU L#128(P#125), Core L#32(P#31), Socket L#0(P#0)
+  32: PU L#132(P#129), Core L#33(P#32), Socket L#0(P#0)
+  33: PU L#136(P#133), Core L#34(P#33), Socket L#0(P#0)
+  34: PU L#140(P#137), Core L#35(P#34), Socket L#0(P#0)
+  35: PU L#144(P#141), Core L#36(P#35), Socket L#0(P#0)
+  36: PU L#148(P#145), Core L#37(P#36), Socket L#0(P#0)
+  37: PU L#152(P#149), Core L#38(P#37), Socket L#0(P#0)
+  38: PU L#156(P#153), Core L#39(P#38), Socket L#0(P#0)
+  39: PU L#160(P#157), Core L#40(P#39), Socket L#0(P#0)
+  40: PU L#164(P#161), Core L#41(P#40), Socket L#0(P#0)
+  41: PU L#168(P#165), Core L#42(P#41), Socket L#0(P#0)
+  42: PU L#172(P#169), Core L#43(P#42), Socket L#0(P#0)
+  43: PU L#176(P#173), Core L#44(P#43), Socket L#0(P#0)
+  44: PU L#180(P#177), Core L#45(P#44), Socket L#0(P#0)
+  45: PU L#184(P#181), Core L#46(P#45), Socket L#0(P#0)
+  46: PU L#188(P#185), Core L#47(P#46), Socket L#0(P#0)
+  47: PU L#192(P#189), Core L#48(P#47), Socket L#0(P#0)
+  48: PU L#196(P#193), Core L#49(P#48), Socket L#0(P#0)
+  49: PU L#200(P#197), Core L#50(P#49), Socket L#0(P#0)
+  50: PU L#204(P#201), Core L#51(P#50), Socket L#0(P#0)
+  51: PU L#208(P#205), Core L#52(P#51), Socket L#0(P#0)
+  52: PU L#212(P#209), Core L#53(P#52), Socket L#0(P#0)
+  53: PU L#216(P#213), Core L#54(P#53), Socket L#0(P#0)
+  54: PU L#220(P#217), Core L#55(P#54), Socket L#0(P#0)
+  55: PU L#224(P#221), Core L#56(P#55), Socket L#0(P#0)
+  56: PU L#228(P#225), Core L#57(P#56), Socket L#0(P#0)
+  57: PU L#232(P#229), Core L#58(P#57), Socket L#0(P#0)
+  58: PU L#236(P#233), Core L#59(P#58), Socket L#0(P#0)
+  59: PU L#0(P#0), Core L#0(P#59), Socket L#0(P#0)
+OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
+60,                   44.961225832, 100000,               1000,                 45                   
+```
+
+The directory should now be full of profiles and trace files.  To see the TAU summary of the profiles, use the pprof command:
+
+```
+pprof -s
+Reading Profile files in profile.*
+
+FUNCTION SUMMARY (total):
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0  1:27:15.217  1:42:02.260          71       76631   86229019 .TAU application
+ 10.3    10:30.319    10:30.319       45009           0      14004 hpx::lcos::local::dataflow::execute
+  1.4       58,775     1:26.683           1          58   86683381 ProcData::read_proc
+  1.4     1:26.420     1:26.420           1           0   86420417 APEX MAIN THREAD
+  1.3     1:17.521     1:17.521          60           0    1292027 hpx_main
+  0.5       27,833       27,908          58         385     481178 ProcData::read_proc: main loop
+  0.1        5,938        5,938       31881           0        186 profiler_listener::process_profiles
+  0.0          117          117           3           0      39012 load_components_action
+  0.0           73           73           3           0      24360 pre_main
+  0.0           12           12          31           0        389 primary_namespace_bulk_service_action
+  0.0            7            7           2           0       3669 call_startup_functions_action
+  0.0            6            6           2           0       3336 call_shutdown_functions_action
+  0.0            6            6           9           0        708 symbol_namespace_service_action
+  0.0            4            4           1           0       4924 run_helper
+  0.0            2            2           5           0        436 primary_namespace_service_action
+  0.0            2            2           4           0        520 broadcast_call_startup_functions_action
+  0.0            1            1           4           0        473 broadcast_call_shutdown_functions_action
+
+FUNCTION SUMMARY (mean):
+---------------------------------------------------------------------------------------
+%Time    Exclusive    Inclusive       #Call      #Subrs  Inclusive Name
+              msec   total msec                          usec/call 
+---------------------------------------------------------------------------------------
+100.0     1:13.735     1:26.229           1     1079.31   86229019 .TAU application
+ 10.3        8,877        8,877      633.93           0      14004 hpx::lcos::local::dataflow::execute
+  1.4          827        1,220   0.0140845    0.816901   86683381 ProcData::read_proc
+  1.4        1,217        1,217   0.0140845           0   86420417 APEX MAIN THREAD
+  1.3        1,091        1,091     0.84507           0    1292027 hpx_main
+  0.5          392          393    0.816901     5.42254     481178 ProcData::read_proc: main loop
+  0.1           83           83     449.028           0        186 profiler_listener::process_profiles
+  0.0            1            1   0.0422535           0      39012 load_components_action
+  0.0            1            1   0.0422535           0      24360 pre_main
+  0.0         0.17         0.17     0.43662           0        389 primary_namespace_bulk_service_action
+  0.0        0.103        0.103    0.028169           0       3669 call_startup_functions_action
+  0.0        0.094        0.094    0.028169           0       3335 call_shutdown_functions_action
+  0.0       0.0897       0.0897    0.126761           0        708 symbol_namespace_service_action
+  0.0       0.0694       0.0694   0.0140845           0       4924 run_helper
+  0.0       0.0307       0.0307   0.0704225           0        436 primary_namespace_service_action
+  0.0       0.0293       0.0293    0.056338           0        520 broadcast_call_startup_functions_action
+  0.0       0.0266       0.0266    0.056338           0        473 broadcast_call_shutdown_functions_action
+```
