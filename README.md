@@ -178,6 +178,7 @@ salloc --reservation=SC_Reservation -N 1 -p debug
 
 The output should look something like this:
 
+```
 ./build-mic/apex_examples/apex_fibonacci --hpx:threads 10
 Startup event
 Start event
