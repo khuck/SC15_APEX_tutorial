@@ -394,3 +394,13 @@ FUNCTION SUMMARY (mean):
   0.0       0.0293       0.0293    0.056338           0        520 broadcast_call_startup_functions_action
   0.0       0.0266       0.0266    0.056338           0        473 broadcast_call_shutdown_functions_action
 ```
+
+Running pprof without the -s option will show data for each individual thread.  For a visualization of the profile output, use the paraprof program.
+
+Before the trace files can be visualized, they have to be merged. The trace files are merged using the `tau_multimerge` program, and then the trace is converted to slog2 format using the `tau2slog2` program. After those two steps, the trace can be loaded into the `jumpshot` program:
+
+```
+tau_multimerge
+tau2slog2 tau.trc tau.edf -o tau.slog2
+jumpshot ./tau.slog2
+```
