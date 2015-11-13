@@ -46,5 +46,89 @@ unzip master.zip
 cd SC15_APEX_tutorial
 ```
 
-# Exercise 1
+# Building the exercises:
 
+## Compiling the exercises for the Babbage host nodes:
+
+To build the exercises for the Babbage host nodes, load the appropriate module and then run the configuration script:
+
+```
+# if no HPX module loaded:
+module load hpx/host-0.9.11-release
+# if HPX module already loaded:
+module swap hpx hpx/host-0.9.11-release
+# run cmake and make
+./scripts/configure-host.sh
+```
+
+The build will be configured and compiled in the build-host directory. After compiling, you should have the executables built in the directory `build-host/apex_examples`.
+
+## Compiling the exercises for the Babbage MIC devices:
+
+To build the exercises for the Babbage MIC devices, load the appropriate module and then run the configuration script:
+
+```
+# if no HPX module loaded:
+module load hpx/mic-0.9.11-release
+# if HPX module already loaded:
+module swap hpx hpx/mic-0.9.11-release
+# run cmake and make
+./scripts/configure-mic.sh
+```
+
+The build will be configured and compiled in the build-mic directory. After compiling, you should have the executables built in the directory `build-mic/apex_examples`.
+
+## Compiling the exercises for the Edison CNL nodes:
+
+To build the exercises for the Edison CNL nodes, load the appropriate module and then run the configuration script:
+
+```
+# if no HPX module loaded:
+module load hpx/0.9.11-release
+# if HPX module already loaded:
+module swap hpx hpx/0.9.11-release
+# run cmake and make
+./scripts/configure-cray.sh
+```
+
+The build will be configured and compiled in the build-cray directory. After compiling, you should have the executables built in the directory `build-cray/apex_examples`.
+
+
+# Exercise 1: apex_fibonacci.cpp
+
+## About this exercise:
+
+The first exercise just demonstrates the usage of the APEX Policy Engine. This example is based on the fibonacci program available in HPX, but modified to include policies for different APEX event types. Every time an event passes through APEX, the callback function (defined as a C++ lamda in main()) is executed, printing a message to the screen identifying the event type:
+
+```
+    std::set<apex_event_type> when = {APEX_STARTUP, APEX_SHUTDOWN, APEX_NEW_NODE,
+        APEX_NEW_THREAD, APEX_START_EVENT, APEX_STOP_EVENT, APEX_SAMPLE_VALUE};
+    apex::register_policy(when, [](apex_context const& context)->int{
+        switch(context.event_type) {
+            case APEX_STARTUP: {
+              std::cout << "Startup event" << std::endl;
+              break;
+            }
+            case APEX_SHUTDOWN: {
+              std::cout << "Shutdown event" << std::endl;
+              break;
+            }
+            /* ... many other event types follow ... */
+                        default: {
+              std::cout << "Unknown event" << std::endl;
+            }
+        }
+        return APEX_NOERROR;
+    });
+```
+
+## Running the exercise on the Babbage host node
+
+After compilation, the program is executed by starting an interactive session and running the example:
+
+### Babbage host nodes:
+```
+salloc -N 1 -p debug
+# after the allocation is granted:
+./scripts/run
+```
