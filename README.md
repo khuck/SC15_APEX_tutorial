@@ -459,36 +459,42 @@ salloc --reservation=SC_Reservation -N 1 -p debug
 The output should look something like this:
 
 ```
-./build-host/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 32 --nx 250000 --np 400 --nt 100 --hpx:bind=balanced
+./build-host/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 32 --nx 100000 --np 1000 --nt 100 --hpx:bind=balanced
 Counters initialized! {00000001de000001, 0000000000001001}
+Active threads 0
 APEX concurrency throttling enabled, min threads: 8 max threads: 32
-Cap: 32 New: 0 Prev: 0
-Cap: 24 New: 123 Prev: 123
-Cap: 16 New: 0 Prev: 123
-Cap: 20 New: 336 Prev: 459
-Cap: 16 New: 0 Prev: 459
-Cap: 12 New: 0 Prev: 459
-Cap: 16 New: 0 Prev: 459
-Cap: 18 New: 304 Prev: 763
-Cap: 16 New: 0 Prev: 763
-Cap: 14 New: 0 Prev: 763
-Cap: 16 New: 0 Prev: 763
-Cap: 17 New: 206 Prev: 969
-Cap: 16 New: 0 Prev: 969
-Cap: 15 New: 0 Prev: 969
-Cap: 16 New: 0 Prev: 969
-Cap: 16 New: 106 Prev: 1075
-Cap: 16 New: 94 Prev: 1169
+Cap: 32 New: 52 Prev: 52
+Cap: 24 New: 0 Prev: 52
+Cap: 16 New: 0 Prev: 52
+Cap: 24 New: 196 Prev: 248
+Cap: 20 New: 0 Prev: 248
+Cap: 16 New: 0 Prev: 248
+Cap: 20 New: 0 Prev: 248
+Cap: 22 New: 957 Prev: 1205
+Cap: 20 New: 0 Prev: 1205
+Cap: 18 New: 667 Prev: 1872
+Cap: 20 New: 847 Prev: 2719
+Cap: 21 New: 123 Prev: 2842
+Cap: 20 New: 0 Prev: 2842
+Cap: 19 New: 605 Prev: 3447
+Cap: 20 New: 0 Prev: 3447
+Cap: 21 New: 607 Prev: 4054
+Cap: 20 New: 0 Prev: 4054
+Cap: 19 New: 0 Prev: 4054
+Cap: 20 New: 126 Prev: 4180
+Cap: 20 New: 725 Prev: 4905
+Cap: 20 New: 0 Prev: 4905
 Thread Cap value optimization has converged.
-Thread Cap value : 16
-Cap: 16 New: 0 Prev: 1169
-Cap: 16 New: 0 Prev: 1169
-Cap: 16 New: 0 Prev: 1169
+Thread Cap value : 20
+Cap: 20 New: 619 Prev: 5524
+Cap: 20 New: 741 Prev: 6265
 ...
-Cap: 16 New: 39 Prev: 5224
-Cap: 16 New: 42 Prev: 5266
+Cap: 20 New: 198 Prev: 11787
+Cap: 20 New: 139 Prev: 11926
 OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
-32,                   27.285449883, 250000,               400,                  100                  
+32,                   15.151157572, 100000,               1000,                 100               
 ```
 
-While 16 is not the *optimal* solution, it is an improvement over the performance without the adaptation.
+While 20 is not the *optimal* solution, it is an improvement over the performance without the adaptation, while using fewer resources.
+
+
