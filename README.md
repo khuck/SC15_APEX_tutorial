@@ -158,13 +158,13 @@ The first exercise just demonstrates the usage of the APEX Policy Engine. This e
     });
 ```
 
-## Running the exercise on the Babbage host node
+## Running the exercise on the Babbage MIC node
 
 After compilation, the program is executed by starting an interactive session and running the example:
 
-### Babbage host nodes:
+### Babbage MIC nodes:
 ```
-salloc -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1 -p debug
 # after the allocation is granted:
 ./scripts/run
 ```
