@@ -11,4 +11,4 @@ TOOLCHAIN=${base}/../etc/x86_64.cmake
 buildtype=RelWithDebInfo
 
 do_cmake
-make -j
+make -j2
