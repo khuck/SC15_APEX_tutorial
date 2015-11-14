@@ -8,7 +8,7 @@ if [ "x${HPX_ROOT}" = "x" ] ; then
 else
   local ret=0
   `echo "${HPX_ROOT}" | grep -q ${expected_arch}` || ret=$?
-  if [ ${ret} -eq 1 ] ; then
+  if [ ${ret} -eq 1 -a ! ${expected_arch} = "x86_64" ] ; then
     echo ""
     echo "The HPX module loaded does not match the expected one."
     echo "Please check that you loaded the correct HPX module for the platform '${expected_arch}'."
