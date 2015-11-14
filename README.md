@@ -11,6 +11,8 @@ Any questions or comments, please contact khuck@cs.uoregon.edu.
 To run the exercises in this tutorial, make sure you have set up your environment on edison.nersc.gov or babbage.nersc.gov to build HPX examples:
 
 ```
+bash
+source /usr/share/Modules/init/bash
 source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh
 ```
 should give this output:
