@@ -15,7 +15,7 @@ bash
 source /usr/share/Modules/init/bash
 source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh
 ```
-should give this output:
+should give this output (or something similar):
 ```
 Loading environment for Babbage
 
@@ -43,8 +43,7 @@ Download and expand these examples:
 
 ```
 cd $HOME
-wget https://github.com/khuck/SC15_APEX_tutorial/archive/master.zip
-unzip master.zip
+git clone https://github.com/khuck/SC15_APEX_tutorial.git
 cd SC15_APEX_tutorial
 ```
 
@@ -118,9 +117,11 @@ The build will be configured and compiled in the build-host directory. After com
 
 ## Compiling the exercises for the Edison CNL nodes:
 
-To build the exercises for the Edison CNL nodes, load the appropriate module and then run the configuration script:
+To build the exercises for the Edison CNL nodes, log on to Edison, set up the environment (as described above) load the appropriate module and then run the configuration script:
 
 ```
+source /usr/share/Modules/init/bash
+source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh
 # if no HPX module loaded:
 module load hpx/0.9.11-release
 # if HPX module already loaded:
@@ -167,7 +168,7 @@ The example also forces APEX to output its settings at program initialization, a
     apex::apex_options::use_screen_output(true);
 ```
 
-## Running the exercise on the Babbage MIC node
+## Running the exercise on the Babbage MIC and host nodes, or Edison
 
 After compilation, the program is executed by starting an interactive session and running the example:
 
@@ -176,6 +177,20 @@ After compilation, the program is executed by starting an interactive session an
 salloc --reservation=SC_Reservation -N 1 -p debug
 # after the allocation is granted:
 ./scripts/run_apex_fibonacci-mic.sh
+```
+
+### Babbage Host nodes:
+```
+salloc --reservation=SC_Reservation -N 1 -p debug
+# after the allocation is granted:
+./scripts/run_apex_fibonacci-host.sh
+```
+
+### Edison nodes:
+```
+qsub -I -V -d . --reservation=SC_Reservation -p debug
+# after the allocation is granted:
+./scripts/run_apex_fibonacci-cray.sh
 ```
 
 The output should look something like this:
@@ -255,7 +270,7 @@ symbol_namespace_service_ac... :        7    --n/a--   4.58e-04    --n/a--   3.2
 Shutdown event
 ```
 
-Host, CrayCNL is similar.  It should be noted that APEX/HPX shutdown is somewhat delayed on Babbage - the more threads are requested, the longer it takes to terminate HPX. This is a known issue and is being investigated.
+Babbage host and Edison is similar.  It should be noted that APEX/HPX shutdown is somewhat delayed on Babbage - the more threads are requested, the longer it takes to terminate HPX. This is a known issue and is being investigated.
 
 # Exercise 2: Generating TAU profiles through APEX
 
@@ -411,7 +426,7 @@ jumpshot ./tau.slog2
 
 ## About this exercise
 
-This program is the same 1D stencil heat diffusion program described in exercise 2, but modified to include an APEX policy that will attempt to adjust the thread concurrency to improve performance.  The program is memory-bound beyond a number of threads (system-dependent, usually around 8-12) because the memory request traffic far exceeds the amount of computation required to update a single cell. Scaling studies of this test program have shown that the *ideal* number of threads is that which maximizes concurrency without oversaturating the memory controller. The APEX policy uses ActiveHarmony to minimize the HPX thread queue length (number of tasks waiting to execute). This is the function that requests the counter from HPX and adds it to the APEX profile:
+This program is the same 1D stencil heat diffusion program described in exercise 2, but modified to include an APEX policy that will attempt to adjust the thread concurrency to improve performance.  The program is memory-bound beyond a number of threads (system-dependent, usually around 8-12) because the memory request traffic far exceeds the amount of computation required to update a single cell. Scaling studies of this test program have shown that the *ideal* number of threads is that which maximizes concurrency without oversaturating the memory controller. The APEX policy uses ActiveHarmony (http://www.dyninst.org/harmony) to minimize the HPX thread queue length (number of tasks waiting to execute). This is the function that requests the counter from HPX and adds it to the APEX profile:
 
 ```
 bool test_function(apex_context const& context) {
