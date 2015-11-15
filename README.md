@@ -11,7 +11,7 @@ Any questions or comments, please contact khuck@cs.uoregon.edu.
 To run the exercises in this tutorial, make sure you have set up your environment on edison.nersc.gov or babbage.nersc.gov to build HPX examples:
 
 ```
-# on Babbage, start a bash shell and load the module environment
+# on Babbage ONLY, start a bash shell and load the module environment
 bash
 source /usr/share/Modules/init/bash
 # source the environment
