@@ -631,3 +631,10 @@ qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
 # after the allocation is granted:
 ./scripts/run_1d_stencil_energy-cray.sh
 ```
+
+By setting the `APEX_MEASURE_CONCURRENCY=1` environment variable, APEX generates a gnuplot that shows the power consumption and thread concurrency over time.  To view the gnuplot, load the gnuplot module and run gnuplot (may not work on ssh sessions without X11 forwarding):
+
+```
+module load gnuplot
+gnuplot -persist concurrency.0.gnuplot
+```
