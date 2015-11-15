@@ -8,7 +8,7 @@ np=1000
 #np=400
 # nt is the number of timesteps
 nt=100
-i=48
+i=24
 
 export APEX_TAU=1
 export TAU_TRACE=1
@@ -19,7 +19,7 @@ export APEX_THROTTLE_CONCURRENCY=1
 export APEX_THROTTLING_MIN_THREADS=8
 export APEX_THROTTLING_MAX_THREADS=${i}
 
-cmd="aprun -N 1 -n 1 -d ${i} -j 2 ./build-cray/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 48 --nx $nx --np $np --nt $nt"
+cmd="aprun -N 1 -n 1 -d ${i} -j 1 ./build-cray/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads ${i} --nx $nx --np $np --nt $nt"
 echo ${cmd}
 ${cmd}
 mv tauprofile.xml tauprofile-throttled-cray.xml
