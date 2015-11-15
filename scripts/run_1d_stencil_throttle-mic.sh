@@ -5,7 +5,7 @@ nx=100000
 # np is the number of partitions
 np=1000
 # nt is the number of timesteps
-nt=450
+nt=45
 i=60
 
 export APEX_TAU=1

@@ -174,21 +174,21 @@ After compilation, the program is executed by starting an interactive session an
 
 ### Babbage MIC nodes:
 ```
-salloc --reservation=SC_Reservation -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_apex_fibonacci-mic.sh
 ```
 
 ### Babbage Host nodes:
 ```
-salloc --reservation=SC_Reservation -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_apex_fibonacci-host.sh
 ```
 
 ### Edison nodes:
 ```
-qsub -I -V -d . -q debug  -W x=FLAGS:ADVRES:Edison.SC15.376253
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
 # after the allocation is granted:
 ./scripts/run_apex_fibonacci-cray.sh
 ```
@@ -284,7 +284,7 @@ The program is executed by starting (or continuing) an interactive session and r
 
 ### Babbage MIC nodes:
 ```
-salloc --reservation=SC_Reservation -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil-mic.sh
 ```
@@ -292,7 +292,7 @@ salloc --reservation=SC_Reservation -N 1 -p debug
 The output should look something like this:
 
 ```
-srun mpirun.mic -n 1 -hostfile micfile.8938 -ppn 1 ./build-mic/apex_examples/1d_stencil_4 --hpx:threads 60 --nx 100000 --np 1000 --nt 45
+mpirun.mic -n 1 -hostfile micfile.8938 -ppn 1 ./build-mic/apex_examples/1d_stencil_4 --hpx:threads 60 --nx 100000 --np 1000 --nt 45
 OS_Threads,Execution_Time_sec,Points_per_Partition,Partitions,Time_Steps
 60,                   44.961225832, 100000,               1000,                 45                   
 ```
@@ -406,7 +406,7 @@ The program is executed by starting (or continuing) an interactive session and r
 
 ### Babbage host nodes:
 ```
-salloc --reservation=SC_Reservation -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil_throttle-host.sh
 ```
@@ -499,7 +499,7 @@ The program is executed by starting (or continuing) an interactive session and r
 
 ### Babbage host nodes:
 ```
-salloc --reservation=SC_Reservation -N 1 -p debug
+salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil_repart-host.sh
 ```
