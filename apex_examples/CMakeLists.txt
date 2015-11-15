@@ -4,7 +4,7 @@
 # file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 set(category apex_examples)
-set(programs apex_fibonacci 1d_stencil_4 1d_stencil_4_throttle 1d_stencil_4_repart)
+set(programs apex_fibonacci 1d_stencil_4 1d_stencil_4_throttle 1d_stencil_4_energy 1d_stencil_4_repart)
 
 foreach(program ${programs})
 
