@@ -14,6 +14,7 @@ To run the exercises in this tutorial, make sure you have set up your environmen
 # on Babbage ONLY, start a bash shell and load the module environment
 bash
 source /usr/share/Modules/init/bash
+
 # source the environment
 source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh
 ```
