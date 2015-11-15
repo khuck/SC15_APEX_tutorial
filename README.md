@@ -292,6 +292,20 @@ salloc --reservation=SC_Reservation -N 1
 ./scripts/run_1d_stencil-mic.sh
 ```
 
+### Babbage Host nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil-host.sh
+```
+
+### Cray CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil-cray.sh
+```
+
 The output should look something like this:
 
 ```
@@ -403,7 +417,7 @@ The policy registration is configured to run as an HPX "startup" function:
     hpx::register_startup_function(&register_policies);
 ```
 
-## Running the exercise on the Babbage host node:
+## Running the exercise on the Babbage MIC and host nodes, or Edison
 
 The program is executed by starting (or continuing) an interactive session and running the example:
 
@@ -412,6 +426,20 @@ The program is executed by starting (or continuing) an interactive session and r
 salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil_throttle-host.sh
+```
+
+### Babbage MIC nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil_throttle-mic.sh
+```
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_throttle-cray.sh
 ```
 
 The output should look something like this:
@@ -505,6 +533,20 @@ The program is executed by starting (or continuing) an interactive session and r
 salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil_repart-host.sh
+```
+
+### Babbage MIC nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil_repart-mic.sh
+```
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_repart-cray.sh
 ```
 
 The output should look something like this:
