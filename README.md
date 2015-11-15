@@ -188,7 +188,7 @@ salloc --reservation=SC_Reservation -N 1 -p debug
 
 ### Edison nodes:
 ```
-qsub -I -V -d . -q debug
+qsub -I -V -d . -q debug  -W x=FLAGS:ADVRES:Edison.SC15.376253
 # after the allocation is granted:
 ./scripts/run_apex_fibonacci-cray.sh
 ```
