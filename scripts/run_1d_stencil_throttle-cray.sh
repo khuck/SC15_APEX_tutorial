@@ -17,7 +17,7 @@ export TAU_PROFILE_FORMAT=merged
 export APEX_POLICY=1
 export APEX_THROTTLE_CONCURRENCY=1
 export APEX_THROTTLING_MIN_THREADS=8
-export APEX_THROTTLING_MAX_THREADS=32
+export APEX_THROTTLING_MAX_THREADS=${i}
 
 cmd="aprun -N 1 -n 1 -d ${i} -j 2 ./build-cray/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 48 --nx $nx --np $np --nt $nt"
 echo ${cmd}
