@@ -611,3 +611,23 @@ Tuning has converged.
 
 After tuning, it is determined that for 12 threads, 40 partitions of 250000 cells each provides the best performance.
 
+# BONUS Exercise: APEX event-based policy to enforce user-level power cap
+
+## About this exercise
+
+This program is the same 1D stencil heat diffusion program, but using thread concurrency throttling to enforce a user-specified power cap.  This example is only available on Edison.
+
+Power cap throttling is enabled by setting up the throttling during startup:
+
+```
+    apex::setup_power_cap_throttling();
+```
+
+## Runing the exercise:
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_energy-cray.sh
+```
