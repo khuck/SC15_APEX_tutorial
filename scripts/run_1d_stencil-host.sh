@@ -3,7 +3,7 @@
 nx=100000
 np=1000
 nt=45
-i=60
+i=32
 
 rm -f apex.conf tau.conf
 cat << EOF > apex.conf
