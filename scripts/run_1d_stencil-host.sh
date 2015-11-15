@@ -2,7 +2,7 @@
 
 nx=100000
 np=1000
-nt=45
+nt=100
 i=32
 
 rm -f apex.conf tau.conf
