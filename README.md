@@ -78,7 +78,7 @@ The build will be configured and compiled in the build-mic directory. After comp
 -- Using jemalloc allocator.
 -- Configuring done
 -- Generating done
--- Build files have been written to: /project/projectdirs/xpress/SC15_APEX_tutorial/build-mic
+-- Build files have been written to: /global/u1/t/train1/SC15_APEX_tutorial/build-mic
 CMake configuration done. To build:
 cd build-mic
 make
