@@ -17,7 +17,7 @@ export APEX_THROTTLING_MAX_THREADS=${i}
 
 get_micfile 
 
-cmd="srun mpirun.mic -n 1 -hostfile micfile.$SLURM_JOB_ID -ppn 1 ./build-mic/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads ${i} --nx $nx --np $np --nt $nt"
+cmd="mpirun.mic -n 1 -hostfile micfile.$SLURM_JOB_ID -ppn 1 ./build-mic/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads ${i} --nx $nx --np $np --nt $nt"
 echo ${cmd}
 ${cmd}
 mv tauprofile.xml tauprofile-mic-throttled.xml

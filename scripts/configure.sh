@@ -3,7 +3,7 @@
 check_module()
 {
 if [ "x${HPX_ROOT}" = "x" ] ; then
-  echo "HPX_ROOT is undefined - please source env.sh and load an HPX module"
+  echo "HPX_ROOT is undefined - please source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh and load an HPX module"
   kill -INT $$
 else
   local ret=0
