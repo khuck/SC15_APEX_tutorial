@@ -11,9 +11,10 @@ Any questions or comments, please contact khuck@cs.uoregon.edu.
 To run the exercises in this tutorial, make sure you have set up your environment on edison.nersc.gov or babbage.nersc.gov to build HPX examples:
 
 ```
-# on Babbage, start a bash shell and load the module environment
+# on Babbage ONLY, start a bash shell and load the module environment
 bash
 source /usr/share/Modules/init/bash
+
 # source the environment
 source /project/projectdirs/training/SC15/HPX-SC15/hpx_install/env.sh
 ```
@@ -291,6 +292,20 @@ salloc --reservation=SC_Reservation -N 1
 ./scripts/run_1d_stencil-mic.sh
 ```
 
+### Babbage Host nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil-host.sh
+```
+
+### Cray CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil-cray.sh
+```
+
 The output should look something like this:
 
 ```
@@ -402,7 +417,7 @@ The policy registration is configured to run as an HPX "startup" function:
     hpx::register_startup_function(&register_policies);
 ```
 
-## Running the exercise on the Babbage host node:
+## Running the exercise on the Babbage MIC and host nodes, or Edison
 
 The program is executed by starting (or continuing) an interactive session and running the example:
 
@@ -411,6 +426,20 @@ The program is executed by starting (or continuing) an interactive session and r
 salloc --reservation=SC_Reservation -N 1
 # after the allocation is granted:
 ./scripts/run_1d_stencil_throttle-host.sh
+```
+
+### Babbage MIC nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil_throttle-mic.sh
+```
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_throttle-cray.sh
 ```
 
 The output should look something like this:
@@ -506,6 +535,20 @@ salloc --reservation=SC_Reservation -N 1
 ./scripts/run_1d_stencil_repart-host.sh
 ```
 
+### Babbage MIC nodes:
+```
+salloc --reservation=SC_Reservation -N 1
+# after the allocation is granted:
+./scripts/run_1d_stencil_repart-mic.sh
+```
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_repart-cray.sh
+```
+
 The output should look something like this:
 
 ```
@@ -568,3 +611,30 @@ Tuning has converged.
 
 After tuning, it is determined that for 12 threads, 40 partitions of 250000 cells each provides the best performance.
 
+# BONUS Exercise: APEX event-based policy to enforce user-level power cap
+
+## About this exercise
+
+This program is the same 1D stencil heat diffusion program, but using thread concurrency throttling to enforce a user-specified power cap.  This example is only available on Edison.
+
+Power cap throttling is enabled by setting up the throttling during startup:
+
+```
+    apex::setup_power_cap_throttling();
+```
+
+## Runing the exercise:
+
+### Edison CNL nodes:
+```
+qsub -I -V -d . -W x=FLAGS:ADVRES:Edison.SC15.376253
+# after the allocation is granted:
+./scripts/run_1d_stencil_energy-cray.sh
+```
+
+By setting the `APEX_MEASURE_CONCURRENCY=1` environment variable, APEX generates a gnuplot that shows the power consumption and thread concurrency over time.  To view the gnuplot, load the gnuplot module and run gnuplot (may not work on ssh sessions without X11 forwarding):
+
+```
+module load gnuplot
+gnuplot -persist concurrency.0.gnuplot
+```
