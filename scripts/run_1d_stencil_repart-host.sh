@@ -14,7 +14,7 @@ export APEX_POLICY=1
 
 #get_hostfile 
 
-cmd="./build-host/apex_examples/1d_stencil_4_repart --hpx:print-counter /threadqueue/length --hpx:print-counter-interval 100 --hpx:print-counter-destination /dev/null --hpx:threads 12 --nx $nx --nr $nr --nt $nt --hpx:bind=balanced"
+cmd="./build-host/apex_examples/1d_stencil_4_repart --hpx:print-counter /threadqueue/length --hpx:print-counter-interval 100 --hpx:print-counter-destination /dev/null --hpx:threads 12 --nx $nx --nr $nr --nt $nt"
 echo ${cmd}
 ${cmd}
 mv tauprofile.xml tauprofile-repart.xml

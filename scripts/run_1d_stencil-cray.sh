@@ -3,7 +3,7 @@
 nx=100000
 np=1000
 nt=45
-i=60
+i=48
 
 rm -f apex.conf tau.conf
 cat << EOF > apex.conf
@@ -15,9 +15,9 @@ TAU_PROFILE=1
 EOF
 #TAU_PROFILE_FORMAT=merged
 
-get_micfile 
-cmd="srun mpirun.mic -n 1 -hostfile micfile.$SLURM_JOB_ID -ppn 1 ./build-mic/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt"
+cmd="aprun -N 1 -n 1 -d ${i} -j 2 ./build-cray/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt"
 echo ${cmd}
 ${cmd}
 
 rm -f apex.conf tau.conf
+

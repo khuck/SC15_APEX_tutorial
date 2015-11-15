@@ -14,7 +14,7 @@ get_hostfile
 for i in 32 30 28 26 24 22 20 18 16 14 12 10 8 6 4 2 1 ; do 
     #cmd="srun mpirun.host -n 1 -hostfile hostfile.$SLURM_JOB_ID -ppn 1 ./build-host/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt --hpx:bind=balanced --hpx:print-bind"
     #cmd="./build-host/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt --hpx:bind=balanced --hpx:print-bind"
-    cmd="./build-host/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt --hpx:bind=balanced"
+    cmd="./build-host/apex_examples/1d_stencil_4 --hpx:threads $i --nx $nx --np $np --nt $nt --hpx:bind=compact"
     echo ${cmd}
     ${cmd}
     mv tauprofile.xml tauprofile-${i}.xml

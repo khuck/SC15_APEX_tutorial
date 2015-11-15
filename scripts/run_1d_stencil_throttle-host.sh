@@ -20,7 +20,7 @@ export APEX_THROTTLING_MAX_THREADS=32
 
 get_hostfile 
 
-cmd="./build-host/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 32 --nx $nx --np $np --nt $nt --hpx:bind=balanced"
+cmd="./build-host/apex_examples/1d_stencil_4_throttle --hpx:queuing=throttle --hpx:threads 32 --nx $nx --np $np --nt $nt"
 echo ${cmd}
 ${cmd}
 mv tauprofile.xml tauprofile-throttled.xml
