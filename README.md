@@ -21,7 +21,7 @@ Loading environment for Babbage
 
 Newly available modules:
 
--------------------------- /project/projectdirs/xpress/tau2-hpx-babbage/modulefiles --------------------------
+---- /chos/global/project/projectdirs/training/SC15/HPX-SC15/hpx_install/../tau2-hpx-babbage/modulefiles -----
 tau/host-2.25 tau/mic-2.25
 
 -------------- /chos/global/project/projectdirs/training/SC15/HPX-SC15/hpx_install/modulefiles ---------------
